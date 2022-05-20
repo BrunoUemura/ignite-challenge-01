@@ -1,0 +1,42 @@
+### USER ROUTE
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+    "name": "Bruno Uemura",
+    "username": "buemura"
+}
+
+### TODOS ROUTE
+GET http://localhost:3333/todos
+username: buemura
+
+###
+POST http://localhost:3333/todos
+Content-Type: application/json
+username: buemura
+
+{
+    "title": "task 1",
+    "deadline": "2022-01-01"
+}
+
+###
+PUT http://localhost:3333/todos/e69ba723-1fd7-4e2b-ade0-d45382c19dca
+Content-Type: application/json
+username: buemura
+
+{
+    "title": "task 1 MODIFIED",
+    "deadline": "2022-01-02"
+}
+
+###
+PATCH  http://localhost:3333/todos/e69ba723-1fd7-4e2b-ade0-d45382c19dca/done
+Content-Type: application/json
+username: buemura
+
+###
+DELETE  http://localhost:3333/todos/f81a86e4-ea61-4586-85d4-d0aa2e1dd9ec
+Content-Type: application/json
+username: buemura
